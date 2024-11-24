@@ -132,7 +132,7 @@ In the below HTML code, you will see:
   - 2. These lines load our questions that are stored inside our `questions.js` file. It is important we load this script first, so that our `quizApp.js` is able to access the data from it.
   - 3. These lines load our `quizApp.js`, which stores the logic and functionality for our application. It is important that this is loaded after the `questions.js`, since it needs to utilize the data inside the file.
 
-Note: The use of `<i>defer</i>` in the script elements means that the script will be loaded AFTER the page itself has been loaded. Then, the order that a script is loaded would rely on their order of linking within the HTML file.
+Note: The use of <i>defer</i> in the script elements means that the script will be loaded AFTER the page itself has been loaded. Then, the order that a script is loaded would rely on their order of linking within the HTML file.
 
 1. Inside `index.html`, include the following code:
 
