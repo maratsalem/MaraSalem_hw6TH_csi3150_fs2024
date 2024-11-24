@@ -1,5 +1,10 @@
 // creating an array of objects
 // Each object consists of the following members: question number, questions, options, and answers
+// numb: The question number
+// question: The question text
+// answer: The correct answer for the question
+// options: An array of possible answers, contains the corerct answer to the question as well
+
 let questions = [
   {
     numb: 1,
