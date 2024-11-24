@@ -1,7 +1,3 @@
-Understood! I'll ensure the tutorial content is presented clearly without formatting while keeping it correct for pasting. Here's the updated version with added detail and clean formatting for pasting into your own files:
-
----
-
 # Quiz App Demo Tutorial
 
 ## Quiz App
