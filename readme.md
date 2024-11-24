@@ -25,15 +25,15 @@ Step 1: Project directory setup
 Note: This step can be done manually through the UI, or through bash. The choice is up to you.
 
     Your project directory should look like this:
-
+```
 Project Folder
-CSS
-style.css
-JS
-questions.js
-quizApp.js
-index.html
-
+    CSS
+        style.css
+    JS
+        questions.js
+        quizApp.js
+    index.html
+```
 As you work through the project, to test the functionality of the code as you work, run index.html with Live Server.
 Step 2: Inserting quiz questions into questions.js
 
