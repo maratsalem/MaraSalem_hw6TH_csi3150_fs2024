@@ -252,4 +252,4 @@ Once the basic quiz app is functioning, consider these improvements to enhance u
 
 1. **Multiple Categories**: Implement functionality where users can select different categories of questions (e.g., General Knowledge, Science, History).
 2. **Responsive Design**: Improve the app’s responsiveness for mobile and tablet views by adding media queries in `style.css`.
-3. **Try redesigning the `quizApp.js` JavaScript functionality to support features like a countdown timer and category selection.**
+3. **Try redesigning the `quizApp.js` JavaScript functionality.
