@@ -9,7 +9,6 @@ The purpose of this application is to provide a web quiz application that tests 
 - The application must be able to display questions on a browser, and react to the user selecting an answer.
 - The application must be able to determine the correct answer and display it after the user has submitted their answer.
 - The application must be able to time the user's response time towards each quiz question.
-- The quiz timer should be an optional choice for the user.
 
 ## Pre-requisites
 
