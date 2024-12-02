@@ -1,0 +1,7 @@
+Problem statement of the App: A concise summary of less than 150 words outlining what the
+app is all about.
+2. Functional features of the App: written as a bullet list, outline the functional features of the app.
+3. Explanation of the directory structure/setup of the App as present in the code base and how
+different files are linked and working together.
+4. Explanation of the codebase in each of relevant files, which in this case are the index.html,
+style.css, questions.js, and quizApp.js files.

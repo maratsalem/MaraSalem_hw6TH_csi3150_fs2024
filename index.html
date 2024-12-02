@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App Demo</title>
+
+    <!-- CSS FILE -->
+    <!-- Styles for the layout and design of the Quiz App -->
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <!-- Linking JavaScript files -->
+    <!-- Make sure to link the questions file first, as it contains the question data used by quizApp.js -->
+    <script src="./js/questions.js" defer></script>
+    <!-- Main logic of the app. Interacts with the elements below to create quiz functionality -->
+    <script src="./js/quizApp.js" defer></script>
+  </head>
+  <body>
+    <!-- Quiz START Button -->
+    <!-- Clicking this button triggers the logic in quizApp.js to show the instruction box -->
+    <div class="start_btn"><button>Start Quiz</button></div>
+
+    <!-- Instruction box wrapper -->
+    <!-- Displayed when the quiz starts. The "Continue" button calls quizApp.js logic to start the quiz -->
+    <div class="info_box">
+      <div class="info-title"><span>Some Rules of this Quiz</span></div>
+      <div class="info-list">
+        <div class="info">
+          1. You will have only <span>15 seconds</span> per each question.
+        </div>
+        <div class="info">
+          2. Once you select your answer, it can't be undone.
+        </div>
+        <div class="info">
+          3. You can't select any option once time goes off.
+        </div>
+        <div class="info">
+          4. You can't exit from the Quiz while you're playing.
+        </div>
+        <div class="info">
+          5. You'll get points on the basis of your correct answers.
+        </div>
+      </div>
+      <div class="buttons">
+        <!-- Clicking "Exit Quiz" exits the instructions, while "Continue" starts the quiz -->
+        <button class="quit">Exit Quiz</button>
+        <button class="restart">Continue</button>
+      </div>
+    </div>
+
+    <!-- Quiz Box -->
+    <!-- Main quiz container. Dynamically populated by quizApp.js using data from questions.js -->
+    <div class="quiz_box">
+      <header>
+        <div class="title">Demo Quiz App in JavaScript</div>
+        <div class="timer">
+          <div class="time_left_txt">Time Left</div>
+          <!-- Timer value dynamically updated by quizApp.js -->
+          <div class="timer_sec">15</div>
+        </div>
+        <div class="time_line"></div>
+      </header>
+      <!-- Note that all html for the display of que_text and option_list is declared within quizApp.js -->
+      <!-- The styling for dynamically added html is within style.css -->
+      <section>
+        <!-- Question text dynamically inserted here from questions.js by quizApp.js -->
+        <div class="que_text"></div>
+        <!-- Answer options dynamically inserted here from questions.js by quizApp.js -->
+        <div class="option_list"></div>
+      </section>
+
+      <!-- Footer of Quiz Box -->
+      <footer>
+        <div class="total_que">
+          <!-- Current question count dynamically inserted by quizApp.js -->
+        </div>
+        <!-- Clicking "Next Que" moves to the next question via quizApp.js logic -->
+        <button class="next_btn">Next Que</button>
+      </footer>
+    </div>
+
+    <!-- Result Box -->
+    <!-- Displayed at the end of the quiz. Dynamically updated with the user's score from quizApp.js -->
+    <div class="result_box">
+      <div class="icon">
+        <i class="fas fa-crown"></i>
+      </div>
+      <div class="complete_text">You've completed the Quiz!</div>
+      <div class="score_text">
+        <!-- User's final score dynamically inserted here by quizApp.js -->
+      </div>
+      <div class="buttons">
+        <!-- "Replay Quiz" resets the quiz, and "Quit Quiz" ends it. Both handled by quizApp.js -->
+        <button class="restart">Replay Quiz</button>
+        <button class="quit">Quit Quiz</button>
+      </div>
+    </div>
+  </body>
+</html>
